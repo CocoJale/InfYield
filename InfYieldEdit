@@ -4381,6 +4381,7 @@ CMDs[#CMDs + 1] = {NAME = 'exit', DESC = 'Kills roblox process'}
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'noclip', DESC = 'Go through objects'}
 CMDs[#CMDs + 1] = {NAME = 'wynerd / wyd', DESC = 'Executes wynerd '}
+CMDs[#CMDs + 1] = {NAME = 'ado / adonis / adonisbypass', DESC = 'Executes adonis bypasser script'}
 CMDs[#CMDs + 1] = {NAME = 'guardian / guard', DESC = 'Executes Guardian'}
 CMDs[#CMDs + 1] = {NAME = 'ikura / iku', DESC = 'Executes Ikura hub'}
 CMDs[#CMDs + 1] = {NAME = 'hideplayer / hideplayers / hplayer', DESC = 'Hide other players to boost FPS'}
@@ -6863,6 +6864,10 @@ end)
 
 addcmd('guardian',{'guard'},function(args, speaker)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/Guardian%20v2.lua"),true))()
+end)
+
+addcmd('ado',{'adonis','adonisbypass'},function(args, speaker)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
 end)
 
 addcmd('hideplayer',{'hideplayers','hplayer'},function(args, speaker)
